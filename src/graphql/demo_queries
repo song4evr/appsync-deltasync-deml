@@ -1,0 +1,15 @@
+
+mutation CreatePost($input: CreatePostInput!){
+  createPost(input:$input){
+    id,
+    author,
+    title,
+    content,
+  }
+}
+
+{"input":{
+  "author": "Jin, Song",
+  "title": "TTT",
+  "content": "TTT Demo2"
+}}
